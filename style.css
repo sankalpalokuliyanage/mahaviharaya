@@ -1,0 +1,138 @@
+/* Import Google Fonts - Poppins (English) & Noto Sans Sinhala */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Basic setup */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', 'Noto Sans Sinhala', sans-serif;
+  background-color: #FFF8E7; /* Warm Cream background */
+  color: #1F2937; /* Charcoal */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8E7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6B1E1E;
+  border: 2px solid #FFF8E7;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal.active,
+.reveal-left.active,
+.reveal-right.active {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Image fallback system */
+.img-fallback {
+  background: linear-gradient(135deg, #6B1E1E 0%, #1F2937 100%);
+  position: relative;
+}
+
+.img-fallback::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 80%);
+  pointer-events: none;
+}
+
+/* Glassmorphism utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card-dark {
+  background: rgba(31, 41, 55, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Premium Gold Glow & Hover Effects */
+.gold-glow-hover {
+  transition: all 0.3s ease;
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.3);
+  border-color: rgba(212, 175, 55, 0.8);
+  transform: translateY(-4px);
+}
+
+.gold-border-gradient {
+  position: relative;
+  background: linear-gradient(to right, #6B1E1E, #7C5C3B);
+  padding: 1px;
+}
+
+.gold-border-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: linear-gradient(to right, #D4AF37, #F5E6B3, #D4AF37);
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0.7;
+}
+
+/* Custom styles for Hero Text Shadow */
+.text-shadow-premium {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Loading animation for form */
+.spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 3px solid #FFF;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

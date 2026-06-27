@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Korea Sri Lanka Maha Viharaya is a Sri Lankan Buddhist temple in South Korea serving as a spiritual, cultural, and community center.">
+  <meta name="keywords" content="Korea Sri Lanka Maha Viharaya, Sri Lankan Buddhist Temple Korea, Sri Lankan Temple Asan, Buddhist Temple South Korea">
+  <meta name="author" content="Korea Sri Lanka Maha Viharaya">
+  <title>Korea Sri Lanka Maha Viharaya | Home</title>
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            templeMaroon: '#6B1E1E',
+            templeGold: '#D4AF37',
+            templeCream: '#FFF8E7',
+            templeCharcoal: '#1F2937',
+            templeBrown: '#7C5C3B',
+            lightGold: '#F5E6B3',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'Noto Sans Sinhala', 'sans-serif'],
+            serif: ['Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-templeCream min-h-screen flex flex-col pt-[76px]">
+
+  <!-- Header / Navigation -->
+  <header id="header" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 bg-white/80 backdrop-blur-md py-5 border-b border-templeGold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <img src="assets/logo.png" alt="Korea Sri Lanka Maha Viharaya Logo" class="w-14 h-14 rounded-full object-cover  group-hover:scale-102 transition-transform duration-300">
+          <div class="flex flex-col">
+            <span class="text-sm sm:text-base font-bold text-templeMaroon leading-tight tracking-wide font-serif">Korea Sri Lanka Maha Viharaya</span>
+            <span class="text-[10px] sm:text-xs font-semibold text-templeGold leading-none">කොරියා ශ්‍රී ලංකා මහා විහාරය</span>
+          </div>
+        </a>
+        
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-6">
+          <!-- Language Selector -->
+          <div class="relative inline-flex items-center mr-2 border-r border-gray-200 pr-4">
+            <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a3 3 0 003-3V6.7m0-2.4a9 9 0 11-12.728 0"></path>
+            </svg>
+            <select class="lang-select bg-transparent text-xs font-semibold text-gray-700 hover:text-templeMaroon focus:outline-none cursor-pointer">
+              <option value="en">English (EN)</option>
+              <option value="ko">한국어 (KO)</option>
+            </select>
+          </div>
+
+          <a href="index.html" class="text-sm font-semibold text-templeMaroon border-b-2 border-templeGold pb-1">
+            <span class="lang-en">Home</span>
+            <span class="lang-ko hidden">홈</span>
+          </a>
+          <a href="about.html" class="text-sm font-semibold text-gray-700 hover:text-templeMaroon hover:border-b-2 hover:border-templeGold pb-1 transition-all duration-200">
+            <span class="lang-en">About</span>
+            <span class="lang-ko hidden">소개</span>
+          </a>
+          <a href="events.html" class="text-sm font-semibold text-gray-700 hover:text-templeMaroon hover:border-b-2 hover:border-templeGold pb-1 transition-all duration-200">
+            <span class="lang-en">Events</span>
+            <span class="lang-ko hidden">행사</span>
+          </a>
+          <a href="donations.html" class="text-sm font-semibold text-gray-700 hover:text-templeMaroon hover:border-b-2 hover:border-templeGold pb-1 transition-all duration-200">
+            <span class="lang-en">Donations</span>
+            <span class="lang-ko hidden">후원</span>
+          </a>
+          <a href="contact.html" class="text-sm font-semibold text-gray-700 hover:text-templeMaroon hover:border-b-2 hover:border-templeGold pb-1 transition-all duration-200">
+            <span class="lang-en">Contact</span>
+            <span class="lang-ko hidden">연락처</span>
+          </a>
+          <a href="contact.html#visit" class="bg-templeMaroon text-white hover:bg-templeGold hover:text-templeMaroon px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 border border-templeGold/50 shadow-md">
+            <span class="lang-en">Visit Temple</span>
+            <span class="lang-ko hidden">사찰 방문</span>
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-templeMaroon focus:outline-none p-1" aria-label="Toggle Menu">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-x-0 top-[73px] bg-white border-b border-templeGold/20 shadow-xl z-50 flex flex-col p-6 space-y-4 h-[calc(100vh-73px)] overflow-y-auto">
+      <!-- Language Selector in Mobile -->
+      <div class="flex items-center justify-between border-b border-gray-100 pb-3">
+        <span class="text-sm font-semibold text-gray-500">Language / 언어</span>
+        <select class="lang-select bg-transparent text-sm font-bold text-templeMaroon focus:outline-none border-b border-templeGold/40 py-1 pr-1 cursor-pointer">
+          <option value="en">English (EN)</option>
+          <option value="ko">한국어 (KO)</option>
+        </select>
+      </div>
+      <a href="index.html" class="text-base font-semibold text-templeMaroon border-b border-gray-100 pb-2">
+        <span class="lang-en">Home</span>
+        <span class="lang-ko hidden">홈</span>
+      </a>
+      <a href="about.html" class="text-base font-semibold text-gray-700 hover:text-templeMaroon border-b border-gray-100 pb-2 transition duration-200">
+        <span class="lang-en">About</span>
+        <span class="lang-ko hidden">소개</span>
+      </a>
+      <a href="events.html" class="text-base font-semibold text-gray-700 hover:text-templeMaroon border-b border-gray-100 pb-2 transition duration-200">
+        <span class="lang-en">Events & Programs</span>
+        <span class="lang-ko hidden">행사 및 프로그램</span>
+      </a>
+      <a href="donations.html" class="text-base font-semibold text-gray-700 hover:text-templeMaroon border-b border-gray-100 pb-2 transition duration-200">
+        <span class="lang-en">Donations</span>
+        <span class="lang-ko hidden">후원</span>
+      </a>
+      <a href="contact.html" class="text-base font-semibold text-gray-700 hover:text-templeMaroon border-b border-gray-100 pb-2 transition duration-200">
+        <span class="lang-en">Contact & Location</span>
+        <span class="lang-ko hidden">연락처 및 위치</span>
+      </a>
+      <div class="pt-4">
+        <a href="contact.html#visit" class="block text-center bg-templeMaroon text-white hover:bg-templeGold hover:text-templeMaroon py-3 rounded-xl font-semibold transition duration-300 border border-templeGold/50 shadow-md">
+          <span class="lang-en">Visit Temple</span>
+          <span class="lang-ko hidden">사찰 방문</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    
+    <!-- 1. Hero Section -->
+    <section class="relative h-[85vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-templeCharcoal">
+      <!-- Background Image -->
+      <img src="assets/temple-cover.jpg" alt="Korea Sri Lanka Maha Viharaya Temple" class="absolute inset-0 w-full h-full object-cover object-center opacity-70">
+      
+      <!-- Overlays -->
+      <div class="absolute inset-0 bg-gradient-to-t from-templeCharcoal via-templeCharcoal/45 to-transparent"></div>
+      <div class="absolute inset-0 bg-radial-gradient(circle, rgba(107,30,30,0.4) 0%, transparent 80%) pointer-events-none"></div>
+      <div class="absolute top-1/4 left-1/10 w-96 h-96 bg-templeGold/10 rounded-full blur-[100px] pointer-events-none"></div>
+      
+      <!-- Content Container -->
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white space-y-6">
+        <div class="space-y-4">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-templeGold/20 border border-templeGold/40 text-templeGold text-xs sm:text-sm font-semibold tracking-wider uppercase animate-pulse">
+            <span class="lang-en">Buddhist Temple & Community Center</span>
+            <span class="lang-ko hidden">스리랑카 불교 사찰 & 공동체 센터</span>
+          </span>
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight font-serif text-shadow-premium leading-tight text-white reveal">
+            <span class="lang-en">Welcome to <span class="text-templeGold font-serif">Korea Sri Lanka</span><br class="hidden sm:inline"> Maha Viharaya</span>
+            <span class="lang-ko hidden"><span class="text-templeGold font-serif">한국-스리랑카</span> 마하 비하라야에<br class="hidden sm:inline"> 오신 것을 환영합니다</span>
+          </h1>
+          <h2 class="text-xl sm:text-2xl font-semibold text-lightGold font-sans mt-2 reveal">
+            කොරියා ශ්‍රී ලංකා මහා විහාරයට සාදරයෙන් පිළිගනිමු
+          </h2>
+          <p class="max-w-2xl mx-auto text-sm sm:text-lg text-gray-200 leading-relaxed font-light reveal pt-2">
+            <span class="lang-en">A spiritual home for faith, culture, and community for Sri Lankans living in South Korea.</span>
+            <span class="lang-ko hidden">대한민국에 거주하는 스리랑카인들을 위한 신앙, 문화, 그리고 공동체의 영적 안식처.</span>
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 reveal">
+          <a href="#intro" class="w-full sm:w-auto bg-templeMaroon text-white hover:bg-templeGold hover:text-templeMaroon px-8 py-3.5 rounded-xl font-bold border border-templeGold/45 shadow-lg transition-all duration-300 text-center">
+            <span class="lang-en">Explore Temple</span>
+            <span class="lang-ko hidden">사찰 둘러보기</span>
+          </a>
+          <a href="events.html" class="w-full sm:w-auto bg-white/10 text-white hover:bg-white hover:text-templeCharcoal px-8 py-3.5 rounded-xl font-bold border border-white/30 backdrop-blur-sm transition-all duration-300 text-center">
+            <span class="lang-en">Upcoming Events</span>
+            <span class="lang-ko hidden">다가오는 행사</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Smooth Bottom Divider -->
+      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+        <svg class="relative block w-full h-[40px] text-templeCream" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 120L0 0C60 60 220 80 600 80C980 80 1140 60 1200 0V120Z" fill="currentColor"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 2. Intro Section -->
+    <section id="intro" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-2xl sm:text-4xl font-bold text-templeMaroon font-serif leading-tight reveal">
+          <span class="lang-en">A Sacred Sri Lankan Buddhist Temple in Korea</span>
+          <span class="lang-ko hidden">대한민국의 신성한 스리랑카 불교 사찰</span>
+        </h2>
+        <div class="w-24 h-1 bg-templeGold mx-auto my-3"></div>
+        <p class="text-gray-600 text-sm sm:text-base leading-relaxed reveal">
+          <span class="lang-en">Korea Sri Lanka Maha Viharaya is a Sri Lankan Buddhist temple in South Korea, serving as a spiritual, cultural, and community center for Sri Lankans living in Korea. Rooted in the teachings of Buddhism, the temple provides a peaceful space for religious observances, cultural events, community gatherings, and the preservation of Sri Lankan Buddhist heritage.</span>
+          <span class="lang-ko hidden">한국-스리랑카 마하 비하라야는 대한민국에 있는 스리랑카 불교 사찰로, 한국에 거주하는 스리랑카인들을 위한 영적, 문화적, 공동체 센터 역할을 하고 있습니다. 불교의 가르침에 뿌리를 둔 이 사찰은 종교적 행사, 문화적 행사, 공동체 모임 및 스리랑카 불교 유산 보존을 위한 평화로운 공간을 제공합니다.</span>
+        </p>
+      </div>
+
+      <!-- 3 Highlight Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white/80 rounded-2xl p-8 border border-templeGold/20 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group reveal">
+          <div class="w-16 h-16 rounded-2xl bg-templeCream flex items-center justify-center text-templeMaroon mb-6 border border-templeGold/25 group-hover:bg-[#6B1E1E] group-hover:text-white transition-colors duration-300">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-templeMaroon mb-3 font-serif">
+            <span class="lang-en">Spiritual Guidance</span>
+            <span class="lang-ko hidden">영적 지도</span>
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            <span class="lang-en">Nurturing inner peace through meditation, Dhamma discussions, weekly sermons, and Buddhist teachings for all generations.</span>
+            <span class="lang-ko hidden">명상, 법문 토론, 주간 법회, 그리고 전 세대를 위한 불교 교리를 통해 내면의 평화를 키웁니다.</span>
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white/80 rounded-2xl p-8 border border-templeGold/20 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group reveal">
+          <div class="w-16 h-16 rounded-2xl bg-templeCream flex items-center justify-center text-templeMaroon mb-6 border border-templeGold/25 group-hover:bg-[#6B1E1E] group-hover:text-white transition-colors duration-300">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707M12 5a7 7 0 100 14 7 7 0 000-14z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-templeMaroon mb-3 font-serif">
+            <span class="lang-en">Cultural Heritage</span>
+            <span class="lang-ko hidden">문화 유산</span>
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            <span class="lang-en">Celebrating traditional Sri Lankan Buddhist festivals, including Vesak, Poson, and Sinhala Aluth Avurudda in South Korea.</span>
+            <span class="lang-ko hidden">한국에서 베삭, 포손, 그리고 스리랑카 설날(Aluth Avurudda)을 포함한 전통 스리랑카 불교 축제를 기념합니다.</span>
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white/80 rounded-2xl p-8 border border-templeGold/20 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group reveal">
+          <div class="w-16 h-16 rounded-2xl bg-templeCream flex items-center justify-center text-templeMaroon mb-6 border border-templeGold/25 group-hover:bg-[#6B1E1E] group-hover:text-white transition-colors duration-300">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zM6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-templeMaroon mb-3 font-serif">
+            <span class="lang-en">Community Unity</span>
+            <span class="lang-ko hidden">공동체 결속</span>
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            <span class="lang-en">Providing social support, counseling, and a welcoming meeting space for students, workers, and families far away from home.</span>
+            <span class="lang-ko hidden">고향을 떠나 먼 곳에 있는 학생, 근로자, 가족들을 위한 사회적 지원, 상담, 그리고 따뜻한 만남의 공간을 제공합니다.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About Preview Section -->
+    <section class="py-20 bg-white border-y border-templeGold/20 relative overflow-hidden">
+      <div class="absolute right-0 top-0 w-80 h-80 bg-templeCream/50 rounded-full blur-[80px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Image -->
+          <div class="lg:col-span-5 reveal-left">
+            <div class="relative p-2 border-2 border-templeGold/40 rounded-2xl bg-white shadow-xl max-w-md mx-auto lg:max-w-none">
+              <div class="absolute -top-1 -left-1 w-6 h-6 border-t-2 border-l-2 border-templeMaroon"></div>
+              <div class="absolute -bottom-1 -right-1 w-6 h-6 border-b-2 border-r-2 border-templeMaroon"></div>
+              <img src="assets/temple-about.jpg" alt="Devotion at Temple" class="rounded-xl w-full h-[320px] object-cover">
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="lg:col-span-7 space-y-6 reveal-right">
+            <span class="text-xs sm:text-sm font-bold text-templeGold tracking-wider uppercase">
+              <span class="lang-en">Our Spiritual Journey</span>
+              <span class="lang-ko hidden">우리의 영적 여정</span>
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-templeMaroon font-serif leading-tight">
+              <span class="lang-en">Preserving Faith and Culture Beyond Borders</span>
+              <span class="lang-ko hidden">국경을 넘어 신앙과 문화 보존</span>
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+              <span class="lang-en">The temple brings together devotees, families, students, workers, and well-wishers to continue Sri Lankan Buddhist traditions while building unity in the Sri Lankan community in South Korea. We serve as a vital anchor, preserving the teachings of the Theravada Buddhist tradition.</span>
+              <span class="lang-ko hidden">사찰은 신도, 가족, 학생, 근로자, 그리고 후원자들을 하나로 모아 한국 내 스리랑카 공동체의 단결을 도모하는 동시에 스리랑카 불교 전통을 이어가고 있습니다. 우리는 상좌부 불교 전통의 가르침을 보존하는 중요한 버팀목 역할을 합니다.</span>
+            </p>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+              <span class="lang-en">Whether you seek spiritual guidance, a moment of peaceful meditation, or wish to celebrate traditional cultural activities, the temple gates are open to all who search for peace, wisdom, and friendship.</span>
+              <span class="lang-ko hidden">영적 지도를 원하시든, 평화로운 명상의 순간을 원하시든, 전통 문화 활동을 축하하고자 하시든 사찰의 문은 평화, 지혜, 우정을 찾는 모든 이에게 열려 있습니다.</span>
+            </p>
+            <div class="pt-4">
+              <a href="about.html" class="inline-flex items-center text-templeMaroon hover:text-templeGold font-bold text-sm sm:text-base group transition-colors duration-200">
+                <span class="lang-en">Learn More About Us</span>
+                <span class="lang-ko hidden">사찰 소개 더 보기</span>
+                <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Event Highlight Section -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <h2 class="text-2xl sm:text-4xl font-bold text-templeMaroon font-serif">
+          <span class="lang-en">Upcoming Temple Programs</span>
+          <span class="lang-ko hidden">사찰 예정 프로그램</span>
+        </h2>
+        <div class="w-16 h-0.5 bg-templeGold mx-auto my-2"></div>
+        <p class="text-gray-500 text-sm">
+          <span class="lang-en">Participate in our religious services, cultural festivals, and community programs.</span>
+          <span class="lang-ko hidden">사찰의 종교 의식, 문화 축제 및 공동체 프로그램에 참여해 보세요.</span>
+        </p>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Event Card 1 -->
+        <div class="bg-white rounded-2xl border border-templeGold/20 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden group reveal">
+          <div class="p-6 pb-2 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-md bg-[#6B1E1E]/10 text-templeMaroon text-xs font-semibold">
+              <span class="lang-en">June 28, 2026</span>
+              <span class="lang-ko hidden">2026년 6월 28일</span>
+            </span>
+            <h3 class="text-xl font-bold text-templeCharcoal font-serif group-hover:text-templeMaroon transition-colors duration-300">
+              <span class="lang-en">Poson Program & Community Gathering</span>
+              <span class="lang-ko hidden">포손 축제 및 공동체 모임</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="lang-en">A special Poson program bringing together devotees for religious observances, bhakthi gee, dansala, and fellowship.</span>
+              <span class="lang-ko hidden">종교의식, 찬불가(Bhakthi Gee), 단살라(무료 급식), 그리고 친목 도모를 위해 신도들이 한자리에 모이는 특별 포손 법회입니다.</span>
+            </p>
+          </div>
+          <div class="p-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-xs text-gray-400">
+              <span class="lang-en">Asan, South Korea</span>
+              <span class="lang-ko hidden">충남 아산</span>
+            </span>
+            <a href="events.html" class="text-sm font-bold text-templeMaroon hover:text-templeGold transition-colors duration-200">
+              <span class="lang-en">View Event</span>
+              <span class="lang-ko hidden">행사 보기</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="bg-white rounded-2xl border border-templeGold/20 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden group reveal">
+          <div class="p-6 pb-2 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-md bg-templeGold/10 text-templeGold text-xs font-semibold">
+              <span class="lang-en">Every Sunday</span>
+              <span class="lang-ko hidden">매주 일요일</span>
+            </span>
+            <h3 class="text-xl font-bold text-templeCharcoal font-serif group-hover:text-templeMaroon transition-colors duration-300">
+              <span class="lang-en">Weekly Dhamma Sermons</span>
+              <span class="lang-ko hidden">주간 법회</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="lang-en">Join our weekly Sunday Dhamma discussions to explore the path of wisdom, morality, and mental cultivation.</span>
+              <span class="lang-ko hidden">매주 일요일에 열리는 법회에 참석하여 지혜, 도덕성, 마음 공부의 길을 탐구해 보세요.</span>
+            </p>
+          </div>
+          <div class="p-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-xs text-gray-400">3:00 PM - 5:00 PM</span>
+            <a href="events.html" class="text-sm font-bold text-templeMaroon hover:text-templeGold transition-colors duration-200">
+              <span class="lang-en">View Event</span>
+              <span class="lang-ko hidden">행사 보기</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="bg-white rounded-2xl border border-templeGold/20 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden group reveal">
+          <div class="p-6 pb-2 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-md bg-templeGold/10 text-templeGold text-xs font-semibold">
+              <span class="lang-en">Monthly</span>
+              <span class="lang-ko hidden">매월</span>
+            </span>
+            <h3 class="text-xl font-bold text-templeCharcoal font-serif group-hover:text-templeMaroon transition-colors duration-300">
+              <span class="lang-en">Poya Observance Programs</span>
+              <span class="lang-ko hidden">보름 포야 법회</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="lang-en">Observe Uposatha (Eight Precepts) with day-long programs including meditation sessions and Dhamma sermons.</span>
+              <span class="lang-ko hidden">명상 세션과 법회를 포함한 하루 일정 프로그램으로 팔관재계를 봉행합니다.</span>
+            </p>
+          </div>
+          <div class="p-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-xs text-gray-400">
+              <span class="lang-en">Full Moon Days</span>
+              <span class="lang-ko hidden">보름달 당일</span>
+            </span>
+            <a href="events.html" class="text-sm font-bold text-templeMaroon hover:text-templeGold transition-colors duration-200">
+              <span class="lang-en">View Event</span>
+              <span class="lang-ko hidden">행사 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pt-12">
+        <a href="events.html" class="inline-flex items-center justify-center bg-transparent border-2 border-templeMaroon text-templeMaroon hover:bg-templeMaroon hover:text-white px-6 py-2.5 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 shadow-sm">
+          <span class="lang-en">See All Programs</span>
+          <span class="lang-ko hidden">모든 프로그램 보기</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. Call-to-Action Section -->
+    <section class="py-16 bg-gradient-to-r from-templeMaroon to-templeBrown text-white border-y-2 border-templeGold/40 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.12),transparent_70%)] pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-lightGold reveal">
+          <span class="lang-en">Join Our Spiritual Community</span>
+          <span class="lang-ko hidden">우리의 영적 공동체에 동참하세요</span>
+        </h2>
+        <p class="max-w-2xl mx-auto text-sm sm:text-base text-gray-200 leading-relaxed font-light reveal">
+          <span class="lang-en">Join us in preserving Buddhist values, Sri Lankan culture, and community harmony in South Korea. Let the temple be your guide to a peaceful life.</span>
+          <span class="lang-ko hidden">한국에서 불교의 가치, 스리랑카 문화, 그리고 공동체의 조화를 지켜나가는 일에 동참해 주세요. 사찰이 평화로운 삶을 위한 길잡이가 되어 드리겠습니다.</span>
+        </p>
+        <div class="pt-2 reveal">
+          <a href="contact.html" class="inline-block bg-templeGold hover:bg-white text-templeMaroon hover:text-templeMaroon px-8 py-3.5 rounded-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 border border-lightGold/60">
+            <span class="lang-en">Contact Us</span>
+            <span class="lang-ko hidden">문의하기</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1F2937] border-t-4 border-templeGold text-gray-300 pt-16 pb-8 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(212,175,55,0.08),transparent_60%)] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <img src="assets/logo.png" alt="Korea Sri Lanka Maha Viharaya Logo" class="w-8 h-8 rounded-full object-cover border border-[#D4AF37]/50">
+            <div class="flex flex-col">
+              <span class="text-sm font-bold text-white tracking-wide font-serif">Korea Sri Lanka Maha Viharaya</span>
+              <span class="text-[10px] text-templeGold">කොරියා ශ්‍රී ලංකා මහා විහාරය</span>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed pt-2">
+            <span class="lang-en">Korea Sri Lanka Maha Viharaya is a spiritual, cultural, and community center for Sri Lankans living in South Korea.</span>
+            <span class="lang-ko hidden">한국-스리랑카 마하 비하라야는 대한민국에 거주하는 스리랑카인들을 위한 영적, 문화적, 공동체 중심지입니다.</span>
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-white font-bold text-base border-b-2 border-templeGold/40 pb-2 w-1/3 md:w-1/4">
+            <span class="lang-en">Quick Links</span>
+            <span class="lang-ko hidden">빠른 링크</span>
+          </h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-templeGold transition duration-200"><span class="lang-en">Home</span><span class="lang-ko hidden">홈</span></a></li>
+            <li><a href="about.html" class="hover:text-templeGold transition duration-200"><span class="lang-en">About the Temple</span><span class="lang-ko hidden">사찰 소개</span></a></li>
+            <li><a href="events.html" class="hover:text-templeGold transition duration-200"><span class="lang-en">Events & Programs</span><span class="lang-ko hidden">행사 및 프로그램</span></a></li>
+            <li><a href="donations.html" class="hover:text-templeGold transition duration-200"><span class="lang-en">Donations</span><span class="lang-ko hidden">후원</span></a></li>
+            <li><a href="contact.html" class="hover:text-templeGold transition duration-200"><span class="lang-en">Contact & Location</span><span class="lang-ko hidden">연락처 및 위치</span></a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-white font-bold text-base border-b-2 border-templeGold/40 pb-2 w-1/3 md:w-1/4">
+            <span class="lang-en">Programs</span>
+            <span class="lang-ko hidden">프로그램</span>
+          </h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><span class="lang-en">Dhamma Sermons</span><span class="lang-ko hidden">법회 및 설법</span></li>
+            <li><span class="lang-en">Religious Observances</span><span class="lang-ko hidden">종교 의식</span></li>
+            <li><span class="lang-en">Cultural Events</span><span class="lang-ko hidden">문화 행사</span></li>
+            <li><span class="lang-en">Community Gatherings</span><span class="lang-ko hidden">공동체 모임</span></li>
+            <li><span class="lang-en">Youth & Family Programs</span><span class="lang-ko hidden">청소년 및 가족 프로그램</span></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-white font-bold text-base border-b-2 border-templeGold/40 pb-2 w-1/3 md:w-1/4">
+            <span class="lang-en">Contact</span>
+            <span class="lang-ko hidden">연락처</span>
+          </h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-templeGold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>
+                <span class="lang-en">Asan-si, Chungcheongnam-do, South Korea</span>
+                <span class="lang-ko hidden">충청남도 아산시</span>
+              </span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <svg class="w-5 h-5 text-templeGold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span>+82-10-6593-0106</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <svg class="w-5 h-5 text-templeGold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span>koreasrilankamahaviharaya@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 my-8"></div>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+        <span>© 2026 Korea Sri Lanka Maha Viharaya. All Rights Reserved.</span>
+        <span class="mt-2 sm:mt-0">
+          <span class="lang-en">Preserving Faith, Heritage, and Community Harmony.</span>
+          <span class="lang-ko hidden">신앙, 전통, 그리고 공동체 조화의 보존.</span>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
