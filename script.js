@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (header) {
     const handleScroll = () => {
       if (window.scrollY > 20) {
-        header.classList.add('shadow-md', 'bg-white/95', 'py-3');
+        header.classList.add('shadow-lg', 'bg-white/95', 'py-2');
         header.classList.remove('bg-white/80', 'py-5');
       } else {
-        header.classList.remove('shadow-md', 'bg-white/95', 'py-3');
+        header.classList.remove('shadow-lg', 'bg-white/95', 'py-2');
         header.classList.add('bg-white/80', 'py-5');
       }
     };
